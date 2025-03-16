@@ -10,12 +10,12 @@ const Navbar = () => {
     <>
       <header>
         <nav className='w-full flex items-center  justify-between  py-6 px-4'>
-          <section className='max-w-[93px] sm:max-w-[150px]'>                                  
+          <section className='w-16'>                                  
            <img src={logo} alt="" className='w-full'/>
           </section>
             
           <section className='flex'>
-          <ul className='flex  gap-3   items-center justify-center text-res-font  xs:text-xs sm:gap-[40px] sm:text-xl'>
+          <ul className='flex  gap-3   items-center justify-center text-res-font sm:gap-[40px] '>
               <li> Home</li>
               <li> Shop</li>
               <li> About us</li>
