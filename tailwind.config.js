@@ -8,7 +8,10 @@ export default {
     extend: {
       screens:{
         'xs':'320px',
-        'exact-320': { 'raw': '(min-width: 320px) and (max-width: 320px)' } 
+        // 'exact-320': { 'raw': '(min-width: 320px) and (max-width: 320px)' } 
+      },
+      fontSize:{
+        'res-font': ['clamp(1rem, 2vw + 1rem, 2rem)', '1.5rem'],
       }
     },
   },
