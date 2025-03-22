@@ -38,7 +38,7 @@ const FooterSection = () => {
                     <li>twitter</li>
                     <li>pinteress</li>
                     <li>youtube</li>
-                    <li>Download Product</li>
+                  
                 </ul>
             </div>
 

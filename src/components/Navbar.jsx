@@ -3,6 +3,7 @@ import logo from '../assets/logo.png';
 import searchIcon from '../assets/search.png'; 
 import bagIcon from '../assets/bag.png'; 
 import hamburgerIcon from '../assets/hambuger.png'; 
+import { NavLink } from 'react-router-dom';
 
 
 const Navbar = () => {
@@ -16,10 +17,34 @@ const Navbar = () => {
             
           <section className='flex'>
           <ul className='flex  gap-3   items-center justify-center text-res-font sm:gap-[40px] '>
-              <li> Home</li>
-              <li> Shop</li>
-              <li> About us</li>
-              <li> Blog</li>
+              <li className='hover:border-2 hover: border-cyan-500 hover:p-2'> <NavLink  to={'/'} className={({ isActive }) =>
+             `relative after:absolute after:left-0 after:bottom-[-3px]
+              after:h-1 after:w-0 after:bg-red-500 after:transition-width
+              after:duration-300 hover:after:w-full ${isActive ? 
+                " after:w-full font-bold text-red-500" : ""}`
+            }> Home</NavLink></li>
+
+             <li className='hover:border-2 hover: border-cyan-500 hover:p-2'> <NavLink  to={'/shop'} className={({ isActive }) =>
+             `relative after:absolute after:left-0 after:bottom-[-3px]
+              after:h-1 after:w-0 after:bg-red-500 after:transition-width
+              after:duration-300 hover:after:w-full ${isActive ? 
+                " after:w-full font-bold text-red-500" : ""}`
+            }>Shop</NavLink></li>
+
+            <li className='hover:border-2 hover: border-cyan-500 hover:p-2'> <NavLink  to={'/aboutus'} className={({ isActive }) =>
+             `relative after:absolute after:left-0 after:bottom-[-3px]
+              after:h-1 after:w-0 after:bg-red-500 after:transition-width
+              after:duration-300 hover:after:w-full ${isActive ? 
+                " after:w-full font-bold text-red-500" : ""}`
+            }>About us</NavLink></li>
+
+            <li className='hover:border-2 hover: border-cyan-500 hover:p-2'> <NavLink  to={'/blog'} className={({ isActive }) =>
+             `relative after:absolute after:left-0 after:bottom-[-3px]
+              after:h-1 after:w-0 after:bg-red-500 after:transition-width
+              after:duration-300 hover:after:w-full ${isActive ? 
+                " after:w-full font-bold text-red-500" : ""}`
+            }>Blog</NavLink></li>
+              
             </ul>
           </section>
 
